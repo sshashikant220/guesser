@@ -34,6 +34,7 @@ class Umpire {
     int NumFromPlayer1;
     int NumFromPlayer2;
     int NumFromPlayer3;
+    int NumFromPlayer4;
 
     public void CalllingFromGuesser() {
         Guesser g = new Guesser();
@@ -44,10 +45,12 @@ class Umpire {
         Player p1 = new Player();
         Player p2 = new Player();
         Player p3 = new Player();
+        Player p4 = new Player();
 
         NumFromPlayer1 = p1.GuessPlayer();
         NumFromPlayer2 = p2.GuessPlayer();
         NumFromPlayer3 = p3.GuessPlayer();
+        NumFromPlayer4 =p4.GuesserPlayer();
     }
 
     public void compair() {
@@ -59,9 +62,13 @@ class Umpire {
             System.out.println("Player2 won the game");
         } else if (NumFromGuesser == NumFromPlayer3) {
             System.out.println("Player3 won the game");
-        } else {
-            System.out.println("Nobody won game");
+        } elseif {
+            System.out.println("Player4 won the game");
         }
+        else{
+             System.out.println("No one Won The Game");
+        }
+            
 
     }
 }
